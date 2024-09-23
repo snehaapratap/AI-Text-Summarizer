@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>AI Text Summarizer App</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <!-- App header and introductory paragraphs -->
+    <h1>AI Text Summarizer App</h1>
+    <p>
+      Welcome to the AI Text Summarizer App! This app leverages the power of
+      Artificial Intelligence APIs to provide concise summaries of long texts...
+    </p>
+
+    <!-- Text area and Summarize button -->
+    <div class="container">
+      <div class="text-box">
+        <textarea
+          id="text_to_summarize"
+          name="text_to_summarize"
+          placeholder="Paste in some text to summarize. (Min length is 200 chars. Max length is 100,000 chars.)"
+          maxlength="100000"
+        ></textarea>
+        <button id="submit-button" class="submit-button">
+          <span class="submit-button-text">Summarize</span>
+        </button>
+      </div>
+
+      <!-- Display area for summarized text -->
+      <div class="text-box">
+        <textarea
+          id="summary"
+          name="summarized_text"
+          placeholder="Summarized text will appear here"
+        ></textarea>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
