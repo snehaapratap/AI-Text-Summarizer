@@ -1,0 +1,114 @@
+/* General styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(120deg, #f093fb, #f5576c);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    color: #fff;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    animation: fadeInDown 1s ease-in-out;
+}
+
+/* App container styling */
+.container {
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 100%;
+}
+
+.text-box {
+    margin-bottom: 20px;
+}
+
+/* Textarea styling */
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 15px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    font-size: 1rem;
+    outline: none;
+    resize: none;
+    background-color: #f7f9fc;
+    box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.05);
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+textarea:focus {
+    border-color: #f093fb;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Submit button styling */
+.submit-button {
+    display: block;
+    width: 100%;
+    background: linear-gradient(120deg, #f093fb, #f5576c);
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(245, 87, 108, 0.3);
+    transition: all 0.3s ease-in-out;
+}
+
+.submit-button:hover {
+    background: linear-gradient(120deg, #f5576c, #f093fb);
+    box-shadow: 0 6px 20px rgba(245, 87, 108, 0.5);
+    transform: translateY(-2px);
+}
+
+.submit-button:active {
+    transform: translateY(2px);
+    box-shadow: 0 3px 10px rgba(245, 87, 108, 0.2);
+}
+
+/* Animation for header */
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .submit-button {
+        font-size: 1rem;
+        padding: 12px;
+    }
+
+    textarea {
+        font-size: 0.9rem;
+        padding: 12px;
+    }
+}
